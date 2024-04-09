@@ -1,0 +1,29 @@
+target/
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# maven wrapper #
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+.mvn/wrapper/MavenWrapperDownloader.java
+
+# idea specific #
+.idea/
+*.iml
+
+# eclipse specific #
+*.classpath
+*.project
+*.settings/
+
+# netbeans specific #
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
