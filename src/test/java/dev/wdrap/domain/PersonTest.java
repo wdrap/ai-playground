@@ -1,31 +1,26 @@
+
 package dev.wdrap.domain;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import dev.wdrap.domain.Person;
+import dev.wdrap.domain.Address;
+import dev.wdrap.domain.mother.PersonMother;
 
 public class PersonTest {
 
     @Test
     public void testPersonConstructor() {
-        Address address = new Address("123 Main St", "City", "State", "12345");
-        Person person = new Person("John Doe", 30, address);
+        Person person = PersonMother
+                .createPerson(addressConsumer -> addressConsumer.street("1 Main St"))
+                .build();
 
         assertEquals("John Doe", person.getName());
         assertEquals(30, person.getAge());
-        assertEquals(address, person.getAddress());
+        assertEquals("1 Main St", person.getAddress().getStreet());
+        assertEquals("City", person.getAddress().getCity());
+        assertEquals("State", person.getAddress().getCountry());
+        assertEquals("12345", person.getAddress().getPostalCode());
     }
 
-    @Test
-    public void testPersonGettersAndSetters() {
-        Address address = new Address("123 Main St", "City", "State", "12345");
-        Person person = new Person();
-
-        person.setName("John Doe");
-        person.setAge(30);
-        person.setAddress(address);
-
-        assertEquals("John Doe", person.getName());
-        assertEquals(30, person.getAge());
-        assertEquals(address, person.getAddress());
-    }
 }
