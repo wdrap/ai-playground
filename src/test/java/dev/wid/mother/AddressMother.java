@@ -1,6 +1,6 @@
-package dev.wdrap.domain.mother;
+package dev.wid.mother;
 
-import dev.wdrap.domain.Address;
+import dev.wid.domain.Address;
 
 public class AddressMother {
     public static Address.AddressBuilder createAddress() {

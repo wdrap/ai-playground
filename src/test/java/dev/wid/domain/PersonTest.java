@@ -1,11 +1,11 @@
 
-package dev.wdrap.domain;
+package dev.wid.domain;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import dev.wdrap.domain.Person;
-import dev.wdrap.domain.Address;
-import dev.wdrap.domain.mother.PersonMother;
+
+import dev.wid.domain.Person;
+import dev.wid.mother.PersonMother;
 
 public class PersonTest {
 

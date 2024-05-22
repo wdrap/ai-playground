@@ -1,8 +1,9 @@
-package dev.wdrap.domain.mother;
+package dev.wid.mother;
 
-import dev.wdrap.domain.Person;
-import dev.wdrap.domain.Address;
 import java.util.function.Consumer;
+
+import dev.wid.domain.Address;
+import dev.wid.domain.Person;
 
 
 public class PersonMother {

@@ -1,4 +1,4 @@
-package dev.wdrap.domain;
+package dev.wid.domain;
 
 import lombok.Data;
 import lombok.AllArgsConstructor;
