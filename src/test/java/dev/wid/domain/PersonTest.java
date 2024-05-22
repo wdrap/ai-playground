@@ -4,7 +4,6 @@ package dev.wid.domain;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-import dev.wid.domain.Person;
 import dev.wid.mother.PersonMother;
 
 public class PersonTest {
